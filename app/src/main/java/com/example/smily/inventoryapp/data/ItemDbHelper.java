@@ -10,7 +10,7 @@ public class ItemDbHelper extends SQLiteOpenHelper {
 
     public final static String DB_NAME = "inventory.db";
     public final static int DB_VERSION = 1;
-    //to degib errors
+    //to debug errors
     public final static String LOG_TAG = ItemDbHelper.class.getSimpleName();
 
     public ItemDbHelper(Context context) {

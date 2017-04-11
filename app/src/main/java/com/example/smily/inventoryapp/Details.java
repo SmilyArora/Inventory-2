@@ -95,7 +95,7 @@ public class Details extends AppCompatActivity {
         String sPhone =  cursor.getString(cursor.getColumnIndex(ItemContract.ItemEntry.COLUMN_SUPPLIER_PHONE));
         name.setText(cName);
         price.setText(cPrice);
-        count.setText(cAvail + "");
+        count.setText(Integer.toString(cAvail));
         supplierName.setText(sName);
         supplierEmail.setText(sEmail);
         supplierPhone.setText(sPhone);

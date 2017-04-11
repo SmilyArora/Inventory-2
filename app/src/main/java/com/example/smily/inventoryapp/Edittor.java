@@ -145,7 +145,7 @@ public class Edittor extends AppCompatActivity {
         values.put(ItemContract.ItemEntry.COLUMN_PRICE, price.getText().toString());
         int c = 0;
         if (!TextUtils.isEmpty(count.getText().toString())) {
-            c = Integer.parseInt(count.getText().toString());
+            c = Integer.parseInt(count.getText().toString().trim());
         }
         values.put(ItemContract.ItemEntry.COLUMN_COUNT, c);
         values.put(ItemContract.ItemEntry.COLUMN_SUPPLIER_EMAIL, supplierEmail.getText().toString());
